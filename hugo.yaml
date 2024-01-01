@@ -1,0 +1,31 @@
+baseURL: https://knail1.github.io/
+languageCode: en-us
+#title: My experiences with the intersection of Software Engineering and AI
+title: Omer's log
+paginate: 5
+theme: "PaperMod"
+description: "A place where I write about my thoughts and experiences around Software Engineering as it intersects with the world of AI"
+keywords: [Blog, Portfolio, PaperMod]
+author: Omer Ansari
+#images: ["<link or path of image for opengraph, twitter-cards>"]
+DateFormat: "January 2, 2006"
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Omer's logs
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
