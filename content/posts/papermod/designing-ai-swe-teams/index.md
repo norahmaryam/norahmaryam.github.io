@@ -19,7 +19,7 @@ These innovations guarantee to upheave existing software practices and the softw
 
 New, AI-native companies will rise up and threaten existing legacy businesses. The outcome will be profound. Incredible reductions in lead times from idea to shipped product, massive reduction in operational costs and an ever-decreasing need of reliance in human-based software engineering. Yes, I said it. 
 
-Many great firms of our time have large technology teams supporting their business processes like Sales, Marketing, Support and so on. How these teams react will determine not only their survival through these changes, but also contribute to a potentially indomitable competitive edge for the firms they enable.
+Many great firms of our time have large technology teams supporting their business processes like Sales, Marketing, Support and so on. How these teams react will determine not only how they maintain their relevance through these changes, but also contribute to a potentially indomitable competitive edge for the firms they enable.
 
 This paper provides empirical evidence to support the above claims, and shows one possible framework that technology teams can adopt to ride the Shoggoth, and not be eaten by it.
 
