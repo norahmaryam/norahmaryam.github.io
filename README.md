@@ -15,3 +15,9 @@ novice article but a reasonable start off
 By Lilian Weng (sophisticated version)
 - https://github.com/lilianweng/lilianweng.github.io
 - https://lilianweng.github.io/
+
+Final thing that helped me get it up and running was
+- https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+
+All in all my suggestion for my future self doing another github pages project with hugo is to just the last link, as well as the source code in this repo
