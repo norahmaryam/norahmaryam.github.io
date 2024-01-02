@@ -77,7 +77,7 @@ params:
   homeInfoParams:
     Title: "👋 Welcome to Omer's log"
     Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
+      Here, I write about my experiences with
 
       - Software Engineering,
 
@@ -85,6 +85,7 @@ params:
 
       - how AI is disrupting my field. 
 
+      
       Buckle up, fun times ahead 😏
 
   socialIcons:
