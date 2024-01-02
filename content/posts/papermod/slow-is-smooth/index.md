@@ -1,11 +1,11 @@
 ---
-title: "Designing Autonomous AI Software Engineering organizations"
-summary: Explaining why genAI is about to dramatically disrupt the we create software product development today, and what we should do about it
+title: "Slow is smooth, and smooth is fast"
+summary: How a software delivery team used a data-driven approach to remove friction and deliver faster
 date: 2024-01-01
 series: ["PaperMod"]
 weight: 2
-aliases: ["/designing-ai-swe-teams"]
-tags: ["Autonomous Software Engineering", "GenAI"]
+aliases: ["/slow-is-smooth"]
+tags: ["Software Engineering", "CICD", "developer productivity", "best practices", "shift left"]
 author: ["Omer Ansari"]
 ---
 
