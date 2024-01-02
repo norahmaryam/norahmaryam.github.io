@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts"]
+mainsections: ["posts", "papermod"]
 
 languages:
   en:
@@ -75,9 +75,9 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "👋 Welcome to Omer's log"
+    Title: "AI Frontiers: Engineering Tomorrow"
     Content: >
-      Here, I write about my experiences with Software Engineering, Data Operations, & how AI is disrupting my field. 
+      👋 Hi, I'm Omer Ansari. Here, I write about my experiences with Software Engineering, Data Operations, & how AI is disrupting my field. 
 
       Buckle up, fun times ahead 😏
 
