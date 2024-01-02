@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts"]
 
 languages:
   en:
@@ -42,9 +42,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Omer Ansari
-  # author: ["Me", "You"] # multiple authors
+  description: "Omer Ansari's articles"
+  author: "Omer Ansari"
 
   defaultTheme: auto
   # disableThemeToggle: true
@@ -60,7 +59,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  #images: ["images/papermod-cover.png"]
 
   profileMode:
     enabled: false
@@ -78,8 +77,13 @@ params:
   homeInfoParams:
     Title: "👋 Welcome to Omer's log"
     Content: >
-      Hi, I'm Omer. This is an area where I want to pen my experiences in the world of Software Engineering and write about how it is getting disrupted inside-out through AI.
-      Besides this, I run a product and software engineering organization at Salesforce, and am also a founder of a small firm focused on providing the tools and techniques to fellow leaders like me to improve their data skills.
+      Hi, I'm Omer. Here, I write about my experiences with 
+      - Software Engineering, 
+      - Data Operations, and 
+      - how AI is disrupting my field. 
+      Besides this, I am
+      - a product development leader at Salesforce, and
+      - passionate on providing tools to fellow leaders like me to improve their data skills.
 
   socialIcons:
     - name: github
