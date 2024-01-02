@@ -78,11 +78,17 @@ params:
     Title: "👋 Welcome to Omer's log"
     Content: >
       Hi, I'm Omer. Here, I write about my experiences with 
+
       - Software Engineering, 
+      
       - Data Operations, and 
+      
       - how AI is disrupting my field. 
+      
       Besides this, I am
+      
       - a product development leader at Salesforce, and
+      
       - passionate on providing tools to fellow leaders like me to improve their data skills.
 
   socialIcons:
