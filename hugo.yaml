@@ -77,19 +77,15 @@ params:
   homeInfoParams:
     Title: "👋 Welcome to Omer's log"
     Content: >
-      Hi, I'm Omer. Here, I write about my experiences with 
+      👋 Welcome to demo page of Hugo's theme PaperMod!
 
-      - Software Engineering, 
-      
-      - Data Operations, and 
-      
+      - Software Engineering,
+
+      - Data Operations, &
+
       - how AI is disrupting my field. 
-      
-      Besides this, I am
-      
-      - a product development leader at Salesforce, and
-      
-      - passionate on providing tools to fellow leaders like me to improve their data skills.
+
+      Buckle up, fun times ahead 😏
 
   socialIcons:
     - name: github
