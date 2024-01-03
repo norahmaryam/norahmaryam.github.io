@@ -39,13 +39,16 @@ So, with a strong injection of capacity and a zest of ambitious software feature
 
 ### There is friction in the system…
 
-**Symptoms:** Since, at the time, we didn’t have clear [leading indicators](#1) for our software delivery process, we did not know that things were starting to slow down. There were complaints from engineers around untested code being committed, the front end team started to complain that their code was not getting merged and deployed, and the weekly updates on progress to the executive stakeholders showed little progress week over week. After the 5th week, my business counterpart executive reached out to me in exasperation and said something is seriously wrong. 
+**Symptoms:** Since, at the time, we didn’t have clear [leading indicators](#1) [leading indicators][id1] for our software delivery process, we did not know that things were starting to slow down. There were complaints from engineers around untested code being committed, the front end team started to complain that their code was not getting merged and deployed, and the weekly updates on progress to the executive stakeholders showed little progress week over week. After the 5th week, my business counterpart executive reached out to me in exasperation and said something is seriously wrong. 
 
-What are leading indicators? Taken from economics, leading indicators are signals early in a business cycle that give you the opportunity to influence the future since they are forward-thinking insights and predictions.
+[id1]: ## "What are leading indicators? Taken from economics, leading indicators are signals early in a business cycle that give you the opportunity to influence the future since they are forward-thinking insights and predictions."
 
 ---
 
-
+```markdown
+[id1]: ## "your hover text"
+This is a [hover text][id1] example.
+```
 
 ---
 
