@@ -9,7 +9,7 @@ tags: ["Software Engineering", "CICD", "developer productivity", "best practices
 author: ["Omer Ansari"]
 ---
 
-*Abstract: We did it! Delivered Salesforce Plus in rapid time! We got a ton of funding, and then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, **after** a successful launch.*
+*Abstract: We did it! Delivered a major project in rapid time! We got a ton of funding, and then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, **after** a successful launch.*
 
 ## Backdrop
 
