@@ -9,6 +9,8 @@ tags: ["Software Engineering", "CICD", "developer productivity", "best practices
 author: ["Omer Ansari"]
 ---
 
+*Abstract: We did it! Delivered Salesforce Plus in rapid time! We got a ton of funding, and then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, **after** a successful launch.*
+
 ## Backdrop
 
 A few years ago my team brought Salesorce’s first-ever video streaming service, [Salesforce Plus](http://www.salesforce.com/plus) to life. We did it in a dramatic 4 month turnaround, prior to Dreamforce 2021. It was a smashing success and got much fanfare. 
