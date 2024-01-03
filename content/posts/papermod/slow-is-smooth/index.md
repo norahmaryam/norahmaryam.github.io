@@ -35,15 +35,13 @@ Dr. Eliyahu Goldratt very articulately expressed this challenge in his seminal b
 
 So, with a strong injection of capacity and a zest of ambitious software features, we were off to the races. Business stakeholders were truly excited. From a leadership perspective, all ducks were lined up in a row, and it was going to be a great unveiling of new features at Dreamforce.Inside the software development process, however, things were gunking up.
 
-
+---
 
 ## There is friction in the system…
 
 **Symptoms:** Since, at the time, we didn’t have clear [leading indicators][leadingindicators] [1] for our software delivery process, we did not know that things were starting to slow down. There were complaints from engineers around untested code being committed, the front end team started to complain that their code was not getting merged and deployed, and the weekly updates on progress to the executive stakeholders showed little progress week over week. After the 5th week, my business counterpart executive reached out to me in exasperation and said something is seriously wrong. 
 
 [leadingindicators]: ## "What are leading indicators? Taken from economics, leading indicators are signals early in a business cycle that give you the opportunity to influence the future since they are forward-thinking insights and predictions."
-
----
 
 ### Disjointed Product and Engineering motions
 
@@ -69,8 +67,6 @@ The fact that this pipeline was managed by a shared service team outside the act
 
 In his masterful book, “Thinking Fast and Slow” Daniel Kahneman, explains how human beings, when dealing with a complex or difficult issue, transform the question into an easier one that we can answer. For example, when asked “How happy are you with life”, we answer the question, “What is my mood now”. We had substituted the hard question on “Why are we not delivering features to production efficiently?” to “Why can’t we ship our code whenever we like?”
 
----
-
 ### Application Architecture issues
 
 For the original MVP, there had been short-cuts taken to hit the aggressive deadline. The application architecture had been created at the same time the software was being developed and tested! Therefore, we had landed into a situation where our code base was not cleanly divided, and many of the features depended on changing the same code base in the same files again and again. It was like trying 50 prisoners doing a polka dance in a prison cell; you are inevitably going to be stepping on each other's toes! 
@@ -84,8 +80,6 @@ What tends to save you in such situations is proper [unit test][unittest] [3] co
 However, unit tests take energy to write, and , many times, developers in the rush to get features out the door tend to sacrifice unit test coverage, a common vice in our industry and one I was painfully aware of in my prior experiences.
 
 And, guess what, our teams had fallen into this same trap.
-
----
 
 ### Just how bad was the slow down
 
@@ -135,8 +129,6 @@ We saw that there were more [commits][commits2] [6] coming in for defect fixes v
 
 *It was akin to taking three steps forward, and two steps back.* The team was trying to build a mountain while also digging out of a hole, at the same time!
 
----
-
 ### PRs backing up!
 
 We decide to look at a level higher than the actual code commit. The age of the “Pull Request”..
@@ -148,8 +140,6 @@ This problem had always been there, but with a small team we got away with it, a
 The stale pull requests had actually led us to the most crucial insight of all:
 
 >  *“We had found our key leading indicator, the age of the PR.”
-
----
 
 ### Theory of constraints in action!
 
@@ -190,8 +180,6 @@ Our PR age dropped from 40 days to less than 1 week: which is what we wanted for
 
 ![regular](images/pr-age.png)
 
----
-
 ### Scope management
 
 Both business and engineering had realized that to be successful, the groups had to work closely together. To start, engineering got support from the business stakeholder to allot the next upcoming sprint to reset, and work down the tech debt. In this case, it meant getting the atrocious PRs down to size.
@@ -210,8 +198,6 @@ This allowed business stakeholders to evaluate what was truly important for deli
 
 This transparency and awareness helped us not be too unrealistic about the upcoming sprints and pace ourselves better. We also made a note to audit the defects to see if these defects were truly due to bugs or unclear requirements. 
 
----
-
 ### Pragmatic code coverage
 
 As mentioned earlier, we knew that our code coverage wasn’t great. However, we really could not afford to go back and cover all the code. So we decided to add coverage pragmatically. Through some of the developers that we had removed from the front-end, we bolstered up strong test coverage for critical common code base. Until we re-architected the application, this code base was always being edited by most developers. This strategy of selective code coverage helped with the merge conflicts by punting the issue to the developer the moment she broke the code. 
@@ -223,8 +209,6 @@ The developer was also expected to write a reasonable level of unit tests to cov
 ![regular](images/unit-test-helps-code-health.png)
 
 We implemented this strategy by first completely halting feature development for a sprint and devoting all developers to focus on writing extensive unit test coverage for some of the most common code. After that, we made a requirement to all developers to submit their new code with some modicum of coverage. While It was bumpy in the start, we soon started to see that our throughput of code being written for features compared to the code being written to fix defects started to increase. In other words, cleaner code was being sent in by developers to begin with, and therefore fewer and fewer defects were being caught downstream. Unit test code is akin to paying your taxes. It definitely takes some bandwidth from your developers time to write those tests, but just like taxes serve to improve our roads and bridges, and improve our infrastructure and personal security, these unit tests started providing a cleaner code base which started streamlining the flow of our work.
-
----
 
 ### Defining leading indicators
 
@@ -258,8 +242,6 @@ All the above indicators needed to be measured as a composite number, as well as
 
 All these metrics were manually available by going into certain places within Github, or by creating some custom reports in our work management system ([Gus](https://developer.salesforce.com/blogs/engineering/2014/08/meet-gus-keeping-salesforce-agile)). Eventually I was going to need a dashboard which brought them all together for me.
 
----
-
 ### A quiet and effective way to track progress
 
 One of the struggles that you have when you are in the executive position is that you don’t have a deeply visceral understanding of how things are truly progressing at the ground level. In normal circumstances, you don’t really need it either. You have weekly project reports, steering committee meetings and 1:1s with the leaders that report to you to get a general idea on how things are progressing. 
@@ -281,8 +263,6 @@ All the above indicators needed to be measured as a composite number, as well as
 We brought all these different data points from both Github and from Gus into our data warehouse on a daily basis, created a few more datasets which would start amalgamating historical information using the Slow Changing Dimension Type-2 ([SCD](https://www.sqlshack.com/implementing-slowly-changing-dimensions-scds-in-data-warehouses/)) format, and then we joined the data across to get visibility on how the development teams were faring within the software leading indicators per feature. 
 
 I recall using this dashboard on a daily basis to assess team health during those times. When a leading indicator started going south, we were able to quickly swarm, do a root cause and put it back on track.
-
----
 
 ### Nursing back to health
 
