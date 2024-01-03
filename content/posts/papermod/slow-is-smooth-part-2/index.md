@@ -1,6 +1,6 @@
 ---
 title: "Slow is smooth, and smooth is fast - part 2"
-summary: How a software delivery team used a data-driven approach to remove friction and deliver faster
+summary: Part 2 of how a software delivery team used a data-driven approach to remove friction and deliver faster. It details on the technical, organizational and process improvements made to resolve the issues 
 date: 2024-01-01
 series: ["PaperMod"]
 weight: 2
