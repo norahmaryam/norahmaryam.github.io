@@ -1,5 +1,5 @@
 ---
-title: "Designing Autonomous AI Software Engineering organizations"
+title: "Designing Autonomous AI Software Engineering organizations - Part 1"
 summary: Software is eating the world, but AI is eating software. How IT can get ahead of the AI engineering wave. Part 1 motivates the upcoming dramatic disruption to the software profession and its practices. 
 date: 2023-01-08
 series: ["PaperMod"]

@@ -1,5 +1,5 @@
 ---
-title: "Designing Autonomous AI Software Engineering organizations"
+title: "Designing Autonomous AI Software Engineering organizations - Part 2"
 summary: How genAI is about to dramatically disrupt the we create software product development today, and what we should do about it
 date: 2023-01-08
 series: ["PaperMod"]
