@@ -9,11 +9,17 @@ tags: ["Software Engineering", "CICD", "developer productivity", "best practices
 author: ["Omer Ansari"]
 ---
 
-*Abstract: We did it! Delivered a major project in rapid time! We got a ton of funding, and then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, **after** a successful launch.*
+Hello all! I have finally received approval from Salesforce PR to publish this article. Hope this is of benefit to other product development leaders who build software for a living. 
+
+*Abstract: A few years ago, my software team delivered Salesforce's own video streaming platform,* [*Salesforce Plus*](https://salesforce.com/plus) *in record time! Our customers were happy, and we got a ton of funding, but then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, i.e.* **after** *a successful launch.* 
+
+*This will be a two part article, this being the first part. Here, I lay the backdrop for this experience and detail the challenges we ran into. In the second article, I expand the organizational, technical and process changes we did to resolve it.*
+
+*All diagrams and figures in this article are directional and accurate to convey the concepts, but the data has been anonymized.*
 
 ## Backdrop
 
-A few years ago my team brought Salesorce’s first-ever video streaming service, [Salesforce Plus](http://www.salesforce.com/plus) to life. We did it in a dramatic 4 month turnaround, prior to Dreamforce 2021. It was a smashing success and got much fanfare. 
+A few years ago my team brought Salesforce’s first-ever video streaming service, [Salesforce Plus](http://www.salesforce.com/plus) to life. We did it in a dramatic 4 month turnaround, prior to Dreamforce 2021. It was a smashing success and got much fanfare. 
 
 Internally in the company it got a lot of visibility, and much like other projects which bring value to the company, it got more funding, and the expectations for the next Dreamforce got raised.
 
@@ -22,8 +28,6 @@ Internally in the company it got a lot of visibility, and much like other projec
 This is the story of version 2. The release that follows the Minimum Viable Product, and it is something I have seen a few times in my career. This is typically where the “**problems of the plenty**” start. Plenty of funding, plenty of interest, plenty of new requirements, and plenty of challenges!
 
 The complexity and variety of issues afflicting the product during this particular phase caused us to lose many months of quality development time. With only 3 months (or 6 development sprints) left and a mountain of unfinished work before the upcoming Dreamforce, we had a “do-or-die” situation. We could fail to deliver, and that would cause us to launch some crucial software features which would impact potential marketing pipeline. Bad for our team, bad for the company, and not acceptable!
-
-*Note: All diagrams and figures in this article are directionally accurate to convey the concepts, but all numbers and labels have been anonymized. This will be a two part article. In the first part I talk about the problem and in the second one, I share what we did to resolve it*
 
 ---
 
@@ -57,7 +61,7 @@ We checked with all the internal product owners, and everyone had different (but
 
 ![regular](images/carry-over-work.png)
 
-As shown in the visual above (numbers are obfuscated but the pattern was present directionally accurate), every team was carrying over work to the next sprints, while getting fresh work to do that sprint. Someone else complained the code quality coming in wasn’t that great and not up to spec. When asked for details, there were no specific metrics to point to; these were anecdotal feedback coming in from the lead engineers. Someone else pointed at the pipeline                              having a rigid 2-week schedule to deploy all code to the website causing the issue.
+As shown in the visual above (numbers are obfuscated but the pattern was present directionally accurate), every team was carrying over work to the next sprints, while getting fresh work to do that sprint. Someone else complained the code quality coming in wasn’t that great and not up to spec. When asked for details, there were no specific metrics to point to; these were anecdotal feedback coming in from the lead engineers. Someone else pointed at the pipeline having a rigid 2-week schedule to deploy all code to the website causing the issue.
 
 We also had an interesting dynamic. The User Experience (UX) design team was a strong design agency funded by the business and the new capacity of front end developers mentioned earlier in the article, had come from the same agency. In essence, as soon as a new figma came out, the agency UX and developers worked closely and quickly developed code that was functional in a local environment and kept sending these new features as [Pull Requests][pullrequests] (PRs) [2] to the main software engineering team to review and accept. The main team was taking so long to merge this code that these front end developers were also getting frustrated and started blaming the leads for the slowness.
 

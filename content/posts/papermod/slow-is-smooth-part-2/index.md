@@ -9,7 +9,7 @@ tags: ["Software Engineering", "CICD", "developer productivity", "best practices
 author: ["Omer Ansari"]
 ---
 
-*Abstract: We did it! Delivered a major project in rapid time! We got a ton of funding, and then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, **after** a successful launch.*
+*Abstract: We did it! Delivered a major software project in record time! Our customers were happy, and we got a ton of funding, but then, the troubles started. There are plenty of stories out there around “how people built things from scratch”. This is the story of what happens next, i.e.* **after** *a successful launch.*
 
 This is continuation from part1 where we set the stage and expand on the problem the software team was experiencing.. This section gets into how we resolved it.
 
