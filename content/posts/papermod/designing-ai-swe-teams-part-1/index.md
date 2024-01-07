@@ -136,3 +136,43 @@ These two questions emerge.
 2. What does this mean for IT organizations in existing companies
 
 I attempt to address these questions in the following section
+
+
+
+
+
+---
+
+## References
+
+[1] Hailin Chen Caiming Xiong et al. [ChatGPT’s One-year Anniversary: Are Open-Source](https://arxiv.org/pdf/2311.16989.pdf)
+
+[Large Language Models Catching up?](https://arxiv.org/pdf/2311.16989.pdf)
+
+[2] Andrej Karpathy [[1hr Talk\] Intro to Large Language Models](https://youtu.be/zjkBMFhNj_g?t=1072) (timestamped at “stages of creating an LLM”)
+
+[3] Microsoft - [Phi2: The surprising power of small language models ](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/)(highly performant coder base model)
+
+[4] Eric Hartford [Meet Samantha](https://huggingface.co/) - A baby step towards sentient AI
+
+[5] [Meditron](https://ollama.ai/library/meditron) - Open-source medical large language model adapted from Llama 2 to the medical domain.
+
+[6] Erik Nijkamp, Donald Rose - [Conversational AI Programming with CodeGen: Let AI Write Code For You](https://blog.salesforceairesearch.com/codegen/)
+
+[7] Eldan et al - TinyStories: [How Small Can Language Models Be and Still Speak Coherent English?](https://arxiv.org/abs/2305.07759)
+
+[8] Gunasekar et al - [Textbook is all you need](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/)
+
+[9] Duan et al - BotChat: [Evaluating LLMs' Capabilities of Having Multi-Turn Dialogues](https://arxiv.org/abs/2310.13650)
+
+[10] ChatDev: [easy-to-use LLM-based framework for collective intelligence.](https://github.com/OpenBMB/ChatDev)
+
+[11] MetaGPT: [Given one line Requirement, return PRD, Design, Tasks, Repo](https://github.com/geekan/MetaGPT)
+
+[12] Autogen (by Microsoft): [Enable Next-Gen Large Language Model Applications.](https://github.com/microsoft/autogen)
+
+[13] Crew AI: [Framework for orchestrating role-playing, autonomous AI agents.](https://github.com/joaomdmoura/crewAI)
+
+[14] Oliver Morris: [Can AI Team Up with Itself for Our Benefit?](https://medium.com/@olimoz/the-collaboration-code-from-ai-solo-act-to-symphony-303d975832fe)
+
+[15] Waseem et al: [Autonomous Agents in Software Development: A Vision Paper](https://arxiv.org/abs/2311.18440)
