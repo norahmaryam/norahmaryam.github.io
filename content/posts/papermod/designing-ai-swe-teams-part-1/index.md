@@ -86,7 +86,7 @@ This exciting development spawned several open source projects a few of which ha
 
 - Autogen (Microsoft) [12]
   - *AutoGen is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks.* 
-  - Personal note: Autogen has also introduced some pretty interesting agent capabilities like [RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation/#:~:text=Augmented Generation requirements%3F-,What is Retrieval-Augmented Generation%3F,sources before generating a response.), and even a teachable LLM where the agent remembers your chat forever, and you can use a mix of LLMs (closed and open) for different roles
+  - Personal note: Autogen has also introduced some pretty interesting agent capabilities like [RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation/), and even a teachable LLM where the agent remembers your chat forever, and you can use a mix of LLMs (closed and open) for different roles
 
 ![regular](images/autogen-example.png)
 
@@ -122,9 +122,9 @@ Specifically the researchers have identified the following benefits.
 - Streamlined debugging
 - Reduced human error
 
-While some of these were obvious like reduced human error and enhanced productivity, the other findings are quite compelling. As my brother put it so eloquently:
+While some of these were obvious like reduced human error and enhanced productivity, the other findings are quite compelling. As the Nvidia CEO so presciently said way back in 2017:
 
-> Software is eating the world, but AI is eating software
+> Software is eating the world, but AI is going to eat software
 
 ## Taking a step back
 
