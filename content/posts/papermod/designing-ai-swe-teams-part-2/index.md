@@ -79,7 +79,6 @@ One thing I’ve learnt in my career as a leader is it is easy to talk about the
 
 I’ve attempted to articulate these steps in terms of phases, starting with the current state that most of us find ourselves in IT:
 
-## 
 
 ## Current state
 
@@ -114,60 +113,78 @@ While there is a general amorphous uplift for all developers by using these capa
 
 ## Phase 0 : Assessment and Planning
 
-\> If you fail to plan, then you plan to fail.
+> If you fail to plan, then you plan to fail.
 
 Before any concrete actions like team formations etc are done, an assessment exercise needs to be conducted to understand and define the overall scope and goals for bringing AI-driven engineering to the IT organization. A solid plan would drive executive confidence, and right-size any investment asks for the future phases. 
 
 To create a realistic and actionable plan, it is important to look at the processes, tools and technologies from the lens of the AI software agent we will introduce. Key areas to document through this exercise would be:
 
-1. ### Evaluate key software development processes
+1. <u>Evaluate key software development processes</u>
 
-   Stripped down to the core, what are the current processes every human software engineer must partake in today to be able to contribute code to deliver features? Examples here include planning, sizing, developing, adherence to the peculiar branching strategy, running specific test suites, specific coding, unit-test and documentation requirements etc. 
+   Stripped down to the core, what are the current processes every human software engineer must partake in today to be able to contribute code to deliver features? Examples here include planning, sizing, developing, adherence to the peculiar branching strategy, running specific test suites, specific coding, unit-test and documentation requirements etc.
+
+   
 
    *In other words what are key low-level software development processes that the AI software development agents would also need to integrate into to be practically useful.*
 
+   
+
    This is an important exercise because, in all IT organizations, there are a lot of higher-order processes that are useful for coordination, communication purposes but do not directly contribute to shipping features. Examples include weekly leadership reports, status updates to senior leadership, coordination meetings across multiple domains. Typically any work that is driven by Technical Program Managers can be included in this bucket. Integrating AI-driven engineering is not going to influence those directly (Yes, AI will influence these higher-order processes *indirectly* in a profound way, but that is beyond the scope of this writeup).
+
+   
 
    This evaluation and documentation will help scope out the extra services that may need to be written for the AI-SWE teams to plug them into the existing software delivery workflow.
 
-2. ###  Evaluate current IT infrastructure and environments
+2. <u>Evaluate current IT infrastructure and environments</u>
 
-   When using AI-agent engineering, there are non-trivial issues related to dependency management within the application (i.e. the version of run-time, the libraries being used etc) and API-based dependencies on neighboring applications. My initial experimentation with autonomous AI surfaced various such challenges with deploying software in environments (I’ll document them later in a more technical writeup). There is the matter of authentication management of the application beyond a “local” setup. There may be some manual steps a developer needs to take to be fully provisioned in deploying to that environment. Such a setup would need to be replicated for each AI agent, and obviously automated as much as possible to easily be able to add AI agent capacity with minimal manual effort. In short, detailed “low-level” documentation of what it takes a software engineer starting from scratch in developing some software locally, then deploying to a shared QA environment , and then promoting that code to higher environments all the way into production is essential to identify the roadblocks an AI-agent will face. 
+   When using AI-agent engineering, there are non-trivial issues related to dependency management within the application (i.e. the version of run-time, the libraries being used etc) and API-based dependencies on neighboring applications. My initial experimentation with autonomous AI surfaced various such challenges with deploying software in environments (I’ll document them later in a more technical writeup). There is the matter of authentication management of the application beyond a “local” setup. There may be some manual steps a developer needs to take to be fully provisioned in deploying to that environment. Such a setup would need to be replicated for each AI agent, and obviously automated as much as possible to easily be able to add AI agent capacity with minimal manual effort. In short, detailed “low-level” documentation of what it takes a software engineer starting from scratch in developing some software locally, then deploying to a shared QA environment , and then promoting that code to higher environments all the way into production is essential to identify the roadblocks an AI-agent will face.
+
+    
 
    In many cases we will need to be ready to not have a 100% path of automated continuous **deployment** (CD) to production in the beginning if CD is not in place for human-driven software engineering (H-SWE) today. For instance, if there are humans involved in the change and release management process to ship features to production today, that would still be there when semi-autonomous AI-SWE teams are creating software features by themselves. That doesn’t stop the AI-SWE teams from creating and surfacing all required documentation and testing output to the change board and release managers. (Over time, change and release processes can definitely be powered by AI (not coding, but reasoning) agents as well but that is beyond the scope of this document)
+
+   
 
    Similar to the software process evaluation, environment evaluation will also show what other capabilities need to be streamlined for AI-SWE to be able to stay as autonomous as code gets promoted through higher environments all the way to production.
 
    
 
-3. ### Identify all applications where AI can be integrated (complexity and impact) 
+3. <u>Identify all applications where AI can be integrated (complexity and impact)</u> 
 
    There will be hundreds of candidate applications where AI-SWE could be inserted. However, a careful evaluation of the complexity of processes surrounding each application’s SDLC, the maturity of the AI-coder LLMs for each application’s language, and the level of impact of AI-SWE on that application will be required. Just like in story pointing, Fibonacci scoring can be used against the cost and benefit dimensions and an overall ROI metric can be created which can help executives decide the order of the AI-SWE agent deployment (more in Phase 2 below).
+
+   
 
    Important note: At the bottom of the priority list of applications need to be all those applications where there is already significant context loss [18]. The problem statement must be kept true to building AI-SWE teams and not to dilute to include legacy applications that mysteriously work and no one really understands how.
 
    
 
-4. ### Develop a timeline and roadmap for the transition
+4. <u>Develop a timeline and roadmap for the transition</u>
 
    Of course, no planning phase is complete without a published roadmap, and one would be required here as well. As an executive I love defining timelines, because it forces my team and I to think in terms of real dates, and deadlines, and enables us to think about all aspects and stages of the project holistically. Of course, “no plan survives first contact with the enemy” as Sun Tzu stated. These timelines do, and will change, especially since this type of work has never been done before. We truly don’t know what surprises are in store for us on this journey, and there is no user manual out there for this yet. (In fact, to the best of my knowledge, this article may be the first real attempt at a framework from an experienced product leader who’s been in the trenches).
 
+   
+   
    All those aside, the plan will still give a clear baseline and identify all the assumptions. As surprises emerge, the plan can be reviewed and adjusted. However, those deadlines will still be out there, publicly communicated and they always drive a healthy pressure on the team to keep sharp focus and deliver. For all new projects or features, I always say:
 
 > *“dates can’t change but scope can”*
 
-5. ### AI technology selection
+5. <u>AI technology selection</u>
 
    Some time should be put aside to do a POC-driven technology selection. It would be good to have some high level clarity on which horse to back (aka which base models to fine tune). These models should be able to serve the maximum number of the applications in the first quartile of the priority list coming out of step 3 above. However, we must be able to stay flexible here. This space is rapidly evolving and innovation may come out later this year that requires us to change our choices. What is important here is to focus on the non-regrettables, by asking questions such as: 
 
    - Does the AI technology (the multi-agent frameworks etc) allow us to translate architecture, handling coding, debugging, QA and operations tasks? 
    - Do these frameworks allow us to easily swap LLMs? 
-   - Are there common benchmarks we can define which enable us to evaluate the framework’s performance? 
+   - Are there common benchmarks we can define which enable us to evaluate the framework’s performance?
+
+   
 
    This selection must be based on multiple proof of concepts which show how AI-SWE can integrate with environments and software tooling. There are plenty of cute AI-SWE applications out there like snack-game, count to 100, and printing hello world in multiple languages. The POCs here should focus on simple but real use cases that are applicable within IT. It is these POCs which will give us some level of confidence and show a realistic delta from here to the desired target state which we can put a reasonable level of effort estimation against.
 
+   
+   
    To work on this evaluation and planning assessment, I recommend a small team comprising of:
-
+   
    - a competent software engineering leader who knows how the sausage factory works in terms of software creation in the firm, and is knowledgeable and passionate about the intersection of generative AI. They will be a core change agent for this transformation and will drive this change for the organization.
    - an architect experienced with taking their architectures into production working closely with engineering teams. This needs to be someone who understands the development process within IT, as well as has a deep grounding on the core architectural principles defined by the IT Enterprise Architecture group to ensure they are reflected in the solution.
    - A lead engineer within one of the initial target domains who has in-depth and hands-on experience with the full software lifecycle from requirements, to sizing, to environments, to code reviews. I suspect the lead will intuitively know where the low hanging fruits are where AI agents have the best chance of productive contribution to the team.
@@ -189,32 +206,54 @@ No organizational design in the world is perfect. They tend to optimize for some
 ### 1. AI Development Team
 
 - **Primary Role:** Develop, customize, and maintain AI models, especially LLMs, for various software development tasks. This development will start from pre-trained base models and fine tune them on the application teams’ internal software and documentation. 
+
+  
+
 - **Responsibilities:**
   - AI Model Customization: Focus on fine-tuning pre-trained LLMs to understand the domain team’s specific codebase, software architecture documentation, and domain knowledge as much as possible. This would be relying on high quality curated data by the data management team (see #2 below). In several cases the application code that the Model would be fine-tuned for would be written in languages already understood by the base model (such as Microsoft's Phi-2). However, fresh research may be required in languages that have not been trained to these models such as Terraform which is primarily used by infrastructure automation teams.
     AI Model Quality Assurance (QA): Test AI models to ensure they meet functional requirements and performance benchmarks. These AI models must meet a robust evaluation criteria and objective performance metric. A good outside-in test of the output would be the pull requests the AI-SWE agents would send to the lead engineers. However, based on the leads’ feedback the performance metrics would need to be codified and baked into the model creation pipeline. This team should also explore newly developed methods in academia like BotChat [9] to measure the quality produced by multi-agent AI-SWE teams.
+    
   - Research and Development: Stay abreast of the latest AI advancements and incorporate them into your systems.
+  
+    
+  
 - **Skills Required:** knowledge of the software teams specific tech stack, software development and systems integration. 
   - *I do* **not** *believe a practitioner level of data science knowledge is really required for this team since a lot of OSS capabilities like AutoGPT [19] have already been created to assist with fine-tuning of base models. This team is not going to be doing a lot of data-science or ML work like pre-training models on TPU chips in GCP, but it will be a true engineering team, taking the lego blocks and building out an AI-software engineering capability, building on top of the OSS base models. Essentially, the skills we are going to need here are solid software engineers. This team however will need to have a general idea of how pre-trained coding models [20] were created, and will need to stay on top of the latest developments in the field of multi-agent software development which is why the R&D responsibility has been noted above.*
   - *Later on in a more advanced stage, this team may require to pre-train its own models, which may require data scientists and investment in cloud compute spend, but investing so heavily in this space before proving out real value doesn’t make business sense when a lot of uplift can be gained by building on top of pre-trained models.*
+
+
 
 ### Data Management Team
 
 - **Primary Role:** Manage the data required for training and refining AI models. This team would need to understand what type, quality and format of the data is needed for the training of the models by Team 1, and then be able to collect and annotate this data. In early days, this and the AI development team may be one and the same, but eventually for scaling purposes, this would need to stand as a separate team. In fact, in the beginning creating sample data sets to fine tune the models would likely be done by the AI Development team (1) anyway, and would only hand this work off to this team when scaling out across multiple applications and then multiple domains.
   I found a prototype [21] put out by Autogen very applicable where, by pointing an AI agent towards decent code documentation (aka Retrieval Augmented Generation, or RAG) they demonstrated how the AI agent was able to learn syntax of some new methods in the library and provide code based on that. We may or may not choose to use the RAG method here but the example clearly shows this can be done.
+  
+  
+  
 - **Responsibilities:**
   - Data Collection and Annotation: Gather and label data, such as code repositories, project documentation, and user stories, for AI training. It will be important to see what the formatting, and annotation needs are other fine-tuned coder models. In the fine-tuning phase of natural language models, a lot of question and answer (key:value) pair types of curated data needs to be created [2]. This team would need to translate what that means in the domain of AI-SWE. 
+  
   - Data Quality Assurance: Ensure the accuracy, consistency, and relevance of data used for training AI models. This is a very critical area for the success and quality of the models. Recall from earlier that the effectiveness of the newer small language models is directly coming from the fact that high quality textbook level data is being used to train these models. 
     What this means is that a lot of energy in this team will go in ensuring that this data is relevant, in-context of the applications where the AI agents will be inserted. This may require reviewing and red-lining the existing application documentation (and perhaps code) and collaboration with the existing teams to improve their documentation prior to training.
     While code and general internal documentation for the applications will need to be taught to these AI agents, it would be good to research other generic engineering patterns taught to CS undergraduates in school. That would require formatting, chunking and preparing actual high quality academic text for the fine tuning of the LLMs as well. 
     Finally, some objective metric on how to measure the quality of the data would need to be designed as well.
+    
   - Data Privacy and Security: Handle data in compliance with privacy laws and security standards. This team would be tasked to ensure that all the data that is being curated is abiding by the firm’s privacy and security standards.
+  
+    
+  
 - **Skills Required:** Data management, data annotation, understanding of data privacy laws.
 
 Note: A useful side-benefit of the output of this team will be improving general quality of the code and documentation for target applications. This would likely help the existing team as well with things like new engineer onboarding, as well as helping existing engineers gain deeper understanding of the applications they may have not built, but inherited.
 
+
+
 ### 3. AI Integration and Testing Team
 
 - **Primary Role:** Integrate AI solutions into existing processes and systems and ensure their functionality and reliability. This team provides the “last mile” connectivity for the AI-SWE agents and teams. Without the integration tools and libraries that will be needed, the software and documentation that AI will produce would not be able to get checked-in, reviewed, deployed to testing environments. 
+
+  
+
 - **Responsibilities:**
   - AI Tooling: Develop tools to integrate AI models seamlessly into the existing software development pipeline. In reality these would likely be APIs and helper libraries that can be used for
     - authenticating with the internal Identity management system, 
@@ -226,11 +265,17 @@ You can see the pattern here. These are all activities that human coders typical
 
 - AI Performance Monitoring: Continuously monitor AI systems for any issues or deviations from expected performance. Note: This work could also land into an existing MLOps team if one exists.
 
+  
+
 - **Skills Required:** Experience in software integration, QA testing, performance monitoring, and troubleshooting.
+
+  
 
 ### 4. AI Ethics and Compliance (virtual) Team
 
 - **Primary Role:** Ensure the ethical development and deployment of AI systems. This is preferably a team that is not directly reporting within the shared services organization. Individuals with this experience typically are already present in the Chief Data Office of firms as part of the governance teams. They would be plugged in as consulting and informed parties to ensure their inputs are accounted for within the creation of these AI-SWE systems.
+
+  
 
 - **Responsibilities:**
 
@@ -239,10 +284,14 @@ You can see the pattern here. These are all activities that human coders typical
   - Compliance Framework: Provide a minimally viable set of tangible and measurable compliance rules, regulations and ethical standards that the shared services team can incorporate in the implementation checklist. This is an evolving field and therefore there should be an ongoing interface established with the data governance team to capture any new important regulations or critical AI standards that get created in the industry
 
     While not the responsibility for this team, it could help direct the integrations team (3) in creating extension packs for auditability such as SOX etc, which are able to automatically generate reports based on the documentation created by the AI-SWE teams which are acceptable to internal and perhaps external auditors.
+    
+    
 
 - **Skills Required:** Knowledge of ethical AI principles, legal and regulatory compliance, stakeholder management. It is important to choose the partners with an “enabling” attitude, vs. an “obstructing” attitude. The former will work with the team to find workable solutions, while the latter just likes saying “No, you can’t do that!” but aren’t motivated to find a path forward.
 
 These shared services teams play a critical role in successfully transitioning to an AI-driven software development process. Their effectiveness lies in their ability to collaborate, innovate, and adapt to the evolving landscape of AI technologies.
+
+
 
 ### Exit criteria for Phase 1
 
@@ -255,6 +304,8 @@ However, As DC Palter [22] put it so eloquently:
 *“there’s a huge gap between a prototype that works under controlled circumstances and a commercial product that can’t break under any usage. When the product is 90% finished, it’s only about halfway done.”*
 
 Phase 2 starts when you take this 90% finished prototype (AI-SWE agent) into the real environment.
+
+
 
 ## Phase 2a : Introducing the first AI “Agent” (aka teamlet)
 
@@ -311,6 +362,8 @@ Phase 2a can be considered successful when the AI-SWE Agent (teamlet) is able to
 
 We are now ready to bring these Agents into other domains.
 
+
+
 ## Phase 2b : Introducing the AI SW agents into other domains
 
 This Phase is more of a rinse and repeat of Phase 2a. The differences here would be introducing other lead engineers and architects to this model of working, and the training of custom LLMs suitable for that domain. For example, the custom LLM coder created for the Customer Support tech team will need to be fine-tuned on a different set of software repositories, application documentation , and perhaps may even require a modified set of helper functions (if their software workflows are different) than the custom LLM created for, say, the Finance tech team.
@@ -332,6 +385,8 @@ Funny aside: My brother, a major fanboy of Star Trek drew comparisons of this co
 Phase 2b can be considered complete when each applicable domain has at least one AI Agent online and successfully takes user stories from the board, working on them, and updating the work management systems. Most importantly, their pull requests are at the level of quality that they are consistently being approved by the lead engineer and merged into the mainline.
 
 We are now ready to enter phase 3.
+
+
 
 ## Phase 3a : Introducing a semi-autonomous AI-team into a domain
 
@@ -368,6 +423,8 @@ An area to note is that AI does a great job with functional requirements but it 
 ### Exit criteria for Phase 3a
 
 This phase expects a level of sophistication which is a little further out to be prescriptive about the exact exit criteria, but generally speaking a good barometer of success is to expect full Epics being developed from requirements to functional solutions running in QA. There may still be a need to require human verification on whether Non-functional requirements (NFR) are developed to spec.
+
+
 
 ## Phase 3b : Rolling out AI teams into other domains
 
@@ -407,7 +464,9 @@ There has been research that shows developers getting assistance from AI for wri
 
 **Application Architecture** could also become a bottleneck for velocity if it was not composable, and event driven to start with. This is something to be aware of and if the Phase 0 assessment was completed fairly, should have also been caught within the scoring and prioritization step for each application.
 
-## Counter arguments
+
+
+# Counter arguments
 
 Here’s a little “behind the scenes” story. When I was in the middle of writing this article, I asked chatGPT to take an opposing stance and explain what the problems would be with having less reliance on human-driven software engineering. The feedback, which I abbreviated below, actually helped me refine my proposed phases such as raising the level of human engineers to a higher but even more crucial level, and having an autonomous team being run by each existing engineer in the team.
 
@@ -489,7 +548,7 @@ Here are some counterarguments to consider:
 
 *My response: This is correct and I agree with this sentiment. However, this is a more general risk that the entire software industry is going to face. I’m not sure how we can avoid this at this point. In short, I don’t think anyone has an answer to this, but I guess we shall find out together over the next few years :)* 
 
-## Good engineers have nothing to fear
+# Good engineers have nothing to fear
 
 First, let’s address the topic of **fear** head-on. It is clear from social media studies done on software engineers’ sentiment about AI [30] that fear is by far the dominant emotion amongst developers. It is important to acknowledge this.
 
@@ -505,7 +564,7 @@ At the same time, let’s take a step back and look at the complete set of skill
 
 In a summary of many studies done around great software engineers’ traits, you can see that the coding part is just a subset of what makes these engineer’s great. If you look at the chart above, I’ve marked with a gray arrow all the areas which an AI agent, despite how advanced it gets, will never be able to imitate. In my opinion these are the inimitable skills that all software engineers should intentionally hone and perfect as they will be what distinguishes them and keeps them valuable in the new AI-SWE paradigm-shift. Indeed, these are exactly the skills that would be accentuated and in demand in the Steady state phase of the AI-powered IT firm that I depicted above.
 
-## Conclusion - The storm is coming but are you ready?
+# Conclusion - The storm is coming but are you ready?
 
 
 
