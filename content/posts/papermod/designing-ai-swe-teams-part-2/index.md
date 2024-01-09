@@ -442,6 +442,8 @@ Exit criteria for this phase is surprisingly straightforward: A critical mass (8
 
 
 
+## Steady State (Phase n) : Scale out AI teams, Decentralize AI shared services
+
 ![regular](images/phaseN.png)
 
 *Source: Author*
