@@ -96,7 +96,7 @@ My opinion: is N/A for the moment.I haven’t played with it yet.
 
 - *AutoGen is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks.* 
 
-My opinion: This framework is quite flexible in my early experimentation. Autogen has also introduced some pretty interesting agent capabilities like [RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation/#:~:text=Augmented Generation requirements%3F-,What is Retrieval-Augmented Generation%3F,sources before generating a response.) directly into their library, and even a teachable agent where the agent writes your chat with it to persistent storage, and can query it in the future, thus remembering it forever. Further, you can use a mix of LLMs (closed and open) for different roles, *at the same time!* However, I have not yet found how to explicitly and programmatically delegate work to each AI agent, outside of specifying that in the initial requirements prompt. 
+My opinion: This framework is quite flexible in my early experimentation. Autogen has also introduced some pretty interesting agent capabilities like [RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation) directly into their library, and even a teachable agent where the agent writes your chat with it to persistent storage, and can query it in the future, thus remembering it forever. Further, you can use a mix of LLMs (closed and open) for different roles, *at the same time!* However, I have not yet found how to explicitly and programmatically delegate work to each AI agent, outside of specifying that in the initial requirements prompt. 
 
 ![regular](images/autogen-example.png)
 
