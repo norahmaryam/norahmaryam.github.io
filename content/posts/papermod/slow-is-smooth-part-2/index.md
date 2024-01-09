@@ -158,6 +158,10 @@ Perhaps the single-most memorable statement that resonates with me even now was 
 
 *“Slow is Smooth and Smooth Is Fast”*
 
+
+
+All the graphs and pictures created for this article are available [here](https://docs.google.com/presentation/d/1K1dwkEt2xNQgKG3g04Z92HAUB8er2QmDSWoYmJrJ6GY/edit#slide=id.g2a53d60139e_0_0) and [here](https://docs.google.com/spreadsheets/d/1-IXHvwREgIM2nyRK7lPv-1iFAwRVSi-AbZ66NwkmNDY/edit#gid=974250378)
+
 ---
 ## Definitions
 
