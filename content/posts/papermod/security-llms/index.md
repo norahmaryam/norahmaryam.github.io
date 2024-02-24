@@ -1,11 +1,10 @@
 ---
 title: "Research on Security LLMs"
-summary: a small study on how the use of LLMs and AI can prevent phishing 
-and other fradulent activities. 
+summary: a small study on how the use of LLMs and AI can prevent phishing and other fradulent activities. 
 date: 2024-02-20
 series: ["PaperMod"]
 weight: 2
-aliases: ["/security-llms-1"]
+aliases: ["/security-llms"]
 tags: ["Software Engineering", "CICD", "developer productivity", "security", "AI"]
 author: ["Norah Khan"]
 ---
