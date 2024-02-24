@@ -1,7 +1,7 @@
 baseURL: https://norahmaryam.github.io/
 languageCode: en-us
-#title: My experiences with the intersection of Software Engineering and AI
-title: Omer's log
+#title: My thoughts on technology and innovation
+title: Norah's log
 paginate: 5
 theme: "PaperMod"
 
@@ -42,8 +42,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Omer Ansari's articles"
-  author: "Omer Ansari"
+  description: "Norah Khan's articles"
+  author: "Norah Khan"
 
   defaultTheme: auto
   # disableThemeToggle: true
@@ -75,11 +75,9 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "AI Frontiers: Engineering Tomorrow"
+    Title: "My Thoughts on Technology and Innovation"
     Content: >
-      👋 Hi, I'm Omer Ansari. Here, I write about my experiences with Software Engineering, Data Operations, & how AI is disrupting my field. 
-
-      Buckle up, fun times ahead 😏
+      👋 Hi, I'm Norah Khan! 
 
   socialIcons:
     - name: github
@@ -87,7 +85,9 @@ params:
       url: "https://github.com/norahmaryam/norahmaryam.github.io"
     - name: linkedIn
       title: check out my LinkedIn profile
-      url: "https://www.linkedin.com/in/omer-ansari-30a3762"
+      url: "www.linkedin.com/in/norah-k-bbb44420b"
+
+
 
   #editPost:
   #  URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
