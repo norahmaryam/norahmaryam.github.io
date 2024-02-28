@@ -9,7 +9,15 @@ tags: ["Software Engineering", "CICD", "developer productivity", "security", "AI
 author: ["Norah Khan"]
 ---
 
- I conducted some research on some of the available LLMS. Here's a summary of the top 5 open-source language models (LLMs) fine-tuned on security tasks, showcasing their capabilities and potential applications:  
+# Introduction
+
+Given that my background education is in Computer Science and my work experience is in security, I think it is only natural that I would be curious about the impact of LLMs in the security world. The first question to answer is what is an LLM? Basically, feeding a machine massive datasets which can help it make informed decisions based on that data. LLMs can close the gap between computer and human communication. There are two ways to train a machine: unsupervised and supervised. 
+
+Unsupervised, like the name suggests, is when we give it a bunch of data and don't specifically tell it what to do with it. Whereas supervised LLMs are given specific instructions on how to handle the data it is being fed. Research shows that even an untrained LLM can detect spam, phishing, and other harmful communications. However, I have conducted some research on some of the already fine tuned LLMs out there. I believe these can make strong impacts in the security field to protect companies and individuals from harmful attacks.
+
+# Available Security LLMs
+
+Here's a summary of the top 5 open-source language models (LLMs) fine-tuned on security tasks, showcasing their capabilities and potential applications:  
 
 1. **GPT-NeoX-20B and GPT-J-6B**: Developed by EleutherAI, these models are designed for advanced content generation, with GPT-NeoX-20B offering 20 billion parameters for research and GPT-J-6B providing a balance between performance and resource consumption for startups and medium-sized businesses【5†source】.  
 
